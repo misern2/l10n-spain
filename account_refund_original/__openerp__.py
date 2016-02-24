@@ -23,12 +23,13 @@
 
 {
     "name": "Relationship refund - origin invoice",
-    "version": "8.0.1.0.0",
+    "version": "9.0.1.0.0",
     "author": "Spanish Localization Team,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-spain",
     "contributors": [
         'Pexego <www.pexego.es>',
         'Pedro M. Baeza <pedro.baeza@serviciosbaeza.com>',
+        'Marçal Isern <marsal.isern@qubiq.es',
     ],
     "category": "Localisation/Accounting",
     "depends": [
@@ -37,5 +38,5 @@
     "data": [
         'views/account_invoice_view.xml',
     ],
-    'installable': False,
+    'installable': True,
 }

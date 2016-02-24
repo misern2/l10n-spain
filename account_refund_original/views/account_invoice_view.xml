@@ -7,14 +7,15 @@
             <field name="model">account.invoice</field>
             <field name="inherit_id" ref="account.invoice_form"/>
             <field name="arch" type="xml">
-                <page string="Payments" position="after">
+                <xpath expr="//page" position="after">
+                
                     <page string="Refunds" attrs="{'invisible':[('type', 'not in', ['in_refund', 'out_refund'])]}">
                         <separator string="Description" colspan="4"/>
                         <field name="refund_invoices_description" colspan="4" nolabel="1"/>
                         <separator string="Refunded invoices" colspan="4"/>
                         <field name="origin_invoices_ids" colspan="4" nolabel="1"/>
                     </page>
-                </page>
+                </xpath>
             </field>
         </record>
 
@@ -23,14 +24,14 @@
             <field name="model">account.invoice</field>
             <field name="inherit_id" ref="account.invoice_supplier_form"/>
             <field name="arch" type="xml">
-                <page string="Payments" position="after">
+                <xpath expr="//page" position="after">
                     <page string="Refunds" attrs="{'invisible':[('type', 'not in', ['in_refund', 'out_refund'])]}">
                         <separator string="Description" colspan="4"/>
                         <field name="refund_invoices_description" colspan="4" nolabel="1"/>
                         <separator string="Refunded invoices" colspan="4"/>
                         <field name="origin_invoices_ids" colspan="4" nolabel="1"/>
                     </page>
-                </page>
+                </xpath>
             </field>
         </record>
 
